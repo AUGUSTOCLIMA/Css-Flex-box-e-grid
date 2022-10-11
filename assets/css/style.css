@@ -95,6 +95,8 @@ body {
 /* Main  */
 .principal {
     padding: 24px 16px;
+    display: grid;
+    gap: 16px;
 }
 .titulo-pagina {
     font-size: 1.5rem;
@@ -107,10 +109,14 @@ body {
     overflow: hidden;
     background-color: #2c343a;
 }
+.cartao--destaque {
+    margin-bottom: 16px;
+}
 .cartao__conteudo {
-    padding: 16x;
+    padding: 16px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto 1fr;
+    gap: 8px;
 }
 .cartao__destaque {
     grid-column: span 2;
@@ -148,6 +154,7 @@ body {
     height: 40px;
     border-radius: 10px;
     font-size: 0.9rem;
+    justify-self: flex-end;
 }
 .cartao__botao--play::before {
     content: "\e90b";
@@ -160,4 +167,23 @@ body {
 }
 .cartao__botao--destaque::before {
     margin-right: 8px;
+}
+/* Videos mais vistos */
+.secao  {
+    display: grid;
+    gap: 16px;
+}
+.titulo-secao {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+/*botão cartões vendas */
+.cartao__info--cifra::before {
+    content: "\e905";
+    margin-right: 8px;
+
+}
+.cartao__botao--venda::before {
+    content: "\e901";
+    font-size: 24px;
 }
